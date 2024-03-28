@@ -10,8 +10,12 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
+    
     <div class="app-wrapper">
-      <img class="img-design" src="images/image-product-desktop.jpg" alt="...">
+      <picture class="img-design">
+        <source media="(max-width: 700px)" srcset="images/image-product-mobile.jpg">
+        <img class="phone-img" src="images/image-product-desktop.jpg" alt="...">
+      </picture>
       <div class="content">
         <p>P E R F U M E</p>
         <h1 class="h1-design">Gabrielle Essence Eau De Parfum</h1>

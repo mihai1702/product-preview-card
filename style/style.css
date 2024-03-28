@@ -4,19 +4,18 @@ body{
 .app-wrapper{
     background-color: #fff;
     margin: auto;
-    display: block;
     border-radius: 10px;
     flex-direction: row;
     display: flex;
     width: 650px;
     height: 500px;
     margin-top: 150px;
-    max-width: fit-content;
+
 }
 .img-design{
-    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    border-radius: 100px 0px 0px 100px;
 }
-
 .content{
     margin-left: 40px;
     margin-right: 40px;
@@ -62,4 +61,21 @@ button:hover{
     margin: auto;
     margin-left: 5px;
     font-size: 17px;
+}
+@media (max-width:700px){
+    .app-wrapper{
+        display: block;
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phone-img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .content{
+        display: block;
+        padding-bottom: 40px;
+    }
 }
